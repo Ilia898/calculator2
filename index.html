@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body>
+    <div class="displayArea"></div>
+    <table>
+        <tr>
+            <td onclick="precentOperation()">%</td>
+            <td>n2</td>
+            <td onclick="deleteAll()">C</td>
+            <td onclick="deleteLast()">Del</td>
+        </tr>
+      <tr>
+        <td onclick="appendOperation(7)"">7</td>
+        <td onclick="appendOperation(8)">8</td>
+        <td onclick="appendOperation(9)">9</td>
+        <td class="light" onclick="appendOperation(' / ')">/</td>
+      </tr>
+      <tr>
+        <td onclick="appendOperation(4)">4</td>
+        <td onclick="appendOperation(5)">5</td>
+        <td onclick="appendOperation(6)">6</td>
+        <td class="light" onclick="appendOperation(' * ')">X</td>
+      </tr>
+      <tr>
+        <td onclick="appendOperation(1)">1</td>
+        <td onclick="appendOperation(2)">2</td>
+        <td onclick="appendOperation(3)">3</td>
+        <td class="light" onclick="appendOperation(' + ')">+</td>
+      </tr>
+      <tr>
+        <td onclick="appendOperation(0)">0</td>
+        <td onclick="appendOperation('.')">,</td>
+        <td class="resultBtn" onclick="calculateResult()">=</td>
+        <td class="light" onclick="appendOperation(' - ')">-</td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
